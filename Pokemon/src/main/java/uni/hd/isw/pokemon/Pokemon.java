@@ -5,6 +5,8 @@ public class Pokemon {
     public String name;
     private Type type;
 
+    private Trainer trainer;
+
     int number;
     static int nextNumber = 1;
 
@@ -34,6 +36,13 @@ public class Pokemon {
 
     public String toString() {
         return "Name: " + name + " Type: " + type + " Number: " + number;
+    }
+
+    public void setTrainer(Trainer t) {
+        trainer = t;
+    }
+    public Trainer getTrainer() {
+        return trainer;
     }
 }
 
